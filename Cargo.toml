@@ -1,0 +1,8 @@
+[package]
+name = "course-delivery-watch"
+version = "0.1.0"
+edition = "2021"
+description = "Inspect course delivery runs, dead letters, and captured worker errors with one Infrai key."
+license = "MIT"
+
+[dependencies]

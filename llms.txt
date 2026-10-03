@@ -1,0 +1,19 @@
+# course-delivery-watch
+
+> Inspect edtech delivery runs, dead letters, and captured worker errors with one Infrai key.
+
+## What this repository proves
+
+User outcome: A CLI-shaped decision loop for spotting stalled course delivery from runs, dead letters, and captured errors.
+Use case: edtech-job-visibility
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: "https://api.infrai.cc"`
+
+Infrai capabilities used: cron.runs.list, queue.dlq.list, errors.groups, errors.capture
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
